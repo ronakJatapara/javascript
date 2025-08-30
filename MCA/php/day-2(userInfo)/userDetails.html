@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1" onclick="userDetails()">enter user Details</button>
+
+</body>
+<script>
+
+         function userDetails()
+         {
+                  let userID = +prompt("Enter the userId : ");
+                  let UserName = prompt("Enter User name : ");
+                  let designation = prompt("Enter your designation : ");
+                  let salary = +prompt("enter your salary : ");
+                  let DOB = prompt("Enter your Date of Birth : ");
+                  let DOJ = prompt("Enter your Date Of Join : ");
+
+                  document.write("UserID : ",userID);
+                  document.write("<br>");
+
+                  document.write("UserName : ",UserName);
+                  document.write("<br>");
+
+                  document.write("designation : ",designation);
+                  document.write("<br>");
+
+               if(salary>20000)
+               {
+                salary+=10000;
+                   document.write("designation : ",salary);
+                  document.write("<br>");
+
+               }
+               else{
+                salary+=5000;
+                 document.write("designation : ",salary);
+                  document.write("<br>");
+               }
+
+                  document.write("DOB : ",DOB);
+                  document.write("<br>");
+
+                  document.write("DOJ : ",DOJ);
+
+
+
+
+         }
+
+</script>
+</html>
