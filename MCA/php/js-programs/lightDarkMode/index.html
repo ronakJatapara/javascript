@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    #img1{
+        height: 40px;
+        width: 80px;
+        border: 1px solid black;
+        /* margin-top: 30px; */
+        margin-left: 30px;
+        border-radius: 10px;
+        position: relative;
+       
+    }
+    #img1 img{
+        width: 40%;
+        height: 80%;
+        position: absolute;
+        left: 25px;
+        top: 4px;
+
+
+    }
+      #img2{
+        height: 40px;
+        width: 80px;
+        border: 1px solid black;
+        /* margin-top: 10px; */
+        margin-left: 30px;
+        border-radius: 10px;
+        position: relative;
+        
+      
+    }
+     #img2 img{
+        width: 40%;
+        height: 80%;
+        position: absolute;
+        left: 25px;
+        top: 4px;
+
+
+    }
+</style>
+<body>
+  
+   <div class="main">
+     <div id="img1" onclick="light()">
+        <img src="img/dark.png" alt="">
+    </div>
+    <div id="img2" onclick="dark()">
+        <img src="img/light.png" alt="">
+    </div>
+   </div>
+
+
+</body>
+<script src="script.js">
+
+</script>
+</html>

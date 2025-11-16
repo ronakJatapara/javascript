@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background Color change</title>
+</head>
+<body>
+    <button id="btn1" onclick="clr(this)" value="red">Red</button>
+    <button  onclick="clr(this)" value="blue">Blue</button>
+    <button  onclick="clr(this)" value="pink">Pink</button>
+    <button  onclick="clr(this)" value="orange">Orange</button>
+    <button  onclick="clr(this)" value="black">black</button>
+    <button  onclick="clr(this)" value="gold">gold</button>
+
+</body>
+<script>
+       function clr(obj)
+       {
+             document.body.style.backgroundColor = obj.value;
+       }
+</script>
+</html>

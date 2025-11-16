@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎲 Random Number Game</h1>
+        <p>Enter a number (1-10) and see if you match the random number!</p>
+
+        <div class="input-group">
+            <input type="text" id="num" placeholder="Enter your number">
+        </div>
+
+        <div class="button-group">
+            <button onclick="numberGenerate()" class="btn generate-btn">Generate</button>
+            <button onclick="restart()" class="btn restart-btn">Restart</button>
+        </div>
+
+        <div id="try" class="info-text"></div>
+        <div id="numGen" class="result-text"></div>
+        <div id="text" class="error-text"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

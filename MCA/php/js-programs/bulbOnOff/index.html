@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb On off</title>
+</head>
+<style>
+    *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+    #img1 , #img2{
+        height: 300px;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+   #btn1{
+        margin-left: 140px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+     #btn2{
+        /* margin-left: 140px; */
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+</style>
+<body>
+    <img src="img/bulbOn.png" alt="" id="img1" >
+    <img src="img/bulbOff.png" alt="" id="img2">
+     <br><br>
+    <button onclick="bulbOn()" id="btn1">ON</button>
+    <button onclick="bulbOff()" id="btn2">OFF</button>
+
+
+</body>
+     <script>
+        function bulbOn()
+        {
+            document.getElementById("img1").style.display="inline"
+            document.getElementById("img2").style.display="none"
+
+        }
+          function bulbOff()
+        {
+            document.getElementById("img2").style.display="inline"
+            document.getElementById("img1").style.display="none"
+
+        }
+        bulbOff()
+     </script>
+</html>

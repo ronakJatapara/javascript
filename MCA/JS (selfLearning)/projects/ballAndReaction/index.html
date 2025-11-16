@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ball Throw Animation</title>
+  <style>
+    body {
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      height: 100vh;
+      background: linear-gradient(to bottom, #87CEFA, #f0f0f0);
+    }
+
+    .ground {
+      width: 90%;
+      height: 300px;
+      background: #dcdcdc;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .ball {
+      width: 50px;
+      height: 50px;
+      background: radial-gradient(circle at 30% 30%, #ff4d4d, #b30000);
+      border-radius: 50%;
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      animation: moveBall 3s linear infinite;
+    }
+
+    @keyframes moveBall {
+      0% {
+        left: 0;
+        transform: translateY(0);
+      }
+      50% {
+        left: 80%;
+        transform: translateY(-80px);
+      }
+      100% {
+        left: 0;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ground">
+    <div class="ball" id="ball"></div>
+</div>
+<br><br>
+<button onclick="throwBall()">throw</button>
+<button onclick="stopBall()">stop</button>
+
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg color change</title>
+</head>
+<body>
+
+    
+   <form action="">
+     <input type="radio" name="color" id="" value="red" onclick="clrChange(this)">red
+    <br><br>
+    <input type="radio" name="color" id="" value="blue" onclick="clrChange(this)">blue
+    <br><br>
+    <input type="radio" name="color" id value="pink" onclick="clrChange(this)">pink
+   </form>
+
+
+</body>
+<script>
+    function clrChange(obj)
+    {
+           document.body.style.backgroundColor=obj.value;
+    }
+</script>
+</html>

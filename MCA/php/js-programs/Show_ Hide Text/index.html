@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show / Hide Text</title>
+</head>
+<body>
+          <p id="msg">Hello my self Ronak Jatapara</p>
+          <br>
+
+          <button id="btn1" onclick="textShow()">Show</button>
+          <button id="btn2" onclick="textHide()">Hide</button>
+
+</body>
+    <script>
+          function textShow()
+          {
+             let msg =  document.getElementById("msg").style.display="block";
+
+            //  document.getElementById("btn1").style.display="none";
+            // document.getElementById("btn2").style.display="block";
+          }
+
+          function textHide()
+          {
+            let msg = document.getElementById("msg").style.display="none";
+             
+            // document.getElementById("btn2").style.display="none";
+            //  document.getElementById("btn1").style.display="block";
+          }
+    </script>
+</html> 

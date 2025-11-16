@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name & Designation Checker</title>
+        <style>
+            /* Global Reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                background: linear-gradient(to right, #e0f7fa, #ffe0b2);
+                display: flex;
+                justify-content: center;
+                padding: 50px 20px;
+            }
+
+            .container {
+                background-color: #fff;
+                padding: 40px 30px;
+                border-radius: 20px;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+                width: 100%;
+                max-width: 650px;
+            }
+
+            h6 {
+                text-align: center;
+                background: linear-gradient(90deg, #ff6f61, #ffb347);
+                /* -webkit-background-clip: text; */
+                /* -webkit-text-fill-color: transparent; */
+                font-size: 20px;
+                margin-bottom: 30px;
+                color: black;
+                padding: 4px ;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px 20px;
+                margin-bottom: 25px;
+            }
+
+            .grid input {
+                padding: 12px 15px;
+                font-size: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 12px;
+                background-color: #f9f9f9;
+                transition: 0.3s;
+            }
+
+            .grid input:focus {
+                border-color: #ff6f61;
+                box-shadow: 0 0 8px rgba(255,111,97,0.4);
+                outline: none;
+                background-color: #fff;
+            }
+
+            button {
+                width: 100%;
+                padding: 14px;
+                font-size: 1.1rem;
+                border: none;
+                border-radius: 12px;
+                background: linear-gradient(90deg, #ff6f61, #ffb347);
+                color: #fff;
+                cursor: pointer;
+                transition: 0.3s;
+                font-weight: bold;
+            }
+
+            button:hover {
+                background: linear-gradient(90deg, #ffb347, #ff6f61);
+            }
+
+            #ans {
+                margin-top: 25px;
+                padding: 20px;
+                background-color: #e0f7fa;
+                border-left: 6px solid #ff6f61;
+                border-radius: 12px;
+                min-height: 60px;
+                white-space: pre-line;
+                font-weight: 500;
+                color: #333;
+            }
+
+            @media (max-width: 600px) {
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h6>Names & Designations</h6>
+        <div class="grid">
+            <input type="text" id="val1" placeholder="Name 1">
+            <input type="text" id="val6" placeholder="Designation 1">
+
+            <input type="text" id="val2" placeholder="Name 2">
+            <input type="text" id="val7" placeholder="Designation 2">
+
+            <input type="text" id="val3" placeholder="Name 3">
+            <input type="text" id="val8" placeholder="Designation 3">
+
+            <input type="text" id="val4" placeholder="Name 4">
+            <input type="text" id="val9" placeholder="Designation 4">
+
+            <input type="text" id="val5" placeholder="Name 5">
+            <input type="text" id="val10" placeholder="Designation 5">
+        </div>
+
+        <button onclick="data()">Check</button>
+
+        <p id="ans"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

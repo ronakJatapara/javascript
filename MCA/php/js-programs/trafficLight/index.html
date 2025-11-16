@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Light</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #333;
+    }
+
+    .traffic-light {
+      width: 120px;
+      height: 320px;
+      background: #111;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+   
+
+    #red {
+      height: 80px;
+      width: 80px;
+      border: 1px solid white;
+      border-radius: 50%;
+      background-color: rgb(118, 106, 106);
+
+    }
+     #yellow {
+      height: 80px;
+      width: 80px;
+      border: 1px solid white;
+      border-radius: 50%;
+      background-color: rgb(118, 106, 106);
+
+    }
+     #green {
+      height: 80px;
+      width: 80px;
+      border: 1px solid white;
+      border-radius: 50%;
+      background-color: rgb(118, 106, 106);
+
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="traffic-light">
+      <div id="red" onclick="red()"></div>
+      <div id="yellow" onclick="yellow()"></div>
+      <div id="green" onclick="green()"></div>
+
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

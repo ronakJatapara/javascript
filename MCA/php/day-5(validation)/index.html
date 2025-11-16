@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <h1>login form</h1>
+    <input type="text" placeholder="password" name="" id="pass">
+    <br><br>
+    <input type="text" placeholder="confirm password" name="" id="conPass">
+    <br><br>
+    <button onclick="formSubmit()">Submit</button>
+
+    <p id="msg"></p>
+
+</body>
+<script>
+    function formSubmit(e) {
+
+        let pass = document.getElementById("pass").value;
+        let cPass = document.getElementById("conPass").value;
+
+        if (pass.length < 8) {
+            document.getElementById("msg").innerHTML = " password must be 8 character";
+        }
+        else if(!/^[A-Z]/.test(pass))
+        {
+            document.getElementById("msg").innerHTML = "Password start with capital";
+        }
+        else if(!/[!@#$%^&*()_:;"?]/.test(pass))
+        {
+            document.getElementById("msg").innerHTML = "please addd special character";
+        }
+        else if(pass != cPass)
+        {
+            document.getElementById("msg").innerHTML = "pleace check your password";
+        }
+        else{
+            alert("login Successful");
+        }
+    }
+
+</script>
+
+</html>

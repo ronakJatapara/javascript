@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>like and dislike</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #btn1{
+        background: transparent;
+        /* border: none; */
+        color: red;
+        margin: 50px 50px ;
+        
+    }
+    .fa-heart{
+     font-size: 80px;
+    }
+    #btn2{
+        background: transparent;
+        /* border: none; */
+        margin: 50px 50px ;
+        
+    }
+</style>
+
+<body>
+    <button id="btn1" onclick="like()"><i class="fa-solid fa-heart"></i></button>
+    <button id="btn2" onclick="dislike()"><i class="fa-regular fa-heart"></i></button>
+</body>
+   <script src="script.js"></script>
+</html>

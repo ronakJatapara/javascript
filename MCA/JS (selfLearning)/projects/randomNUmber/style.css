@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#try{
+    color: #ff7eb3;
+}
+.game-container {
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 380px;
+    transition: transform 0.3s;
+}
+
+.game-container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 14px 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 8px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.generate-btn {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    color: white;
+}
+
+.generate-btn:hover {
+    background: linear-gradient(45deg, #5b86e5, #36d1dc);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.restart-btn {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    color: white;
+}
+
+.restart-btn:hover {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.info-text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.result-text {
+    margin-top: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #28a745;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.error-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #dc3545;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade In animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
